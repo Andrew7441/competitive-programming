@@ -14,12 +14,10 @@ int main() {
         vector<int> p(n + 1, 0);
         int cur = 1;
 
-        // Place 1,2,3,... at positions k,2k,3k,...
         for (int i = k; i <= n; i += k) {
             p[i] = cur++;
         }
 
-        // Fill remaining positions with the remaining numbers
         for (int i = 1; i <= n; i++) {
             if (p[i] == 0) {
                 p[i] = cur++;
