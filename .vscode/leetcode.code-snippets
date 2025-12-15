@@ -1,0 +1,19 @@
+{
+  "LeetCode C++ Template": {
+    "prefix": "lc",
+    "body": [
+      "#include <bits/stdc++.h>",
+      "using namespace std;",
+      "",
+      "class Solution {",
+      "public:",
+      "    $1",
+      "};",
+      "",
+      "int main() {",
+      "    $0",
+      "}"
+    ],
+    "description": "Minimal LeetCode C++ template (class Solution + main)"
+  }
+}
