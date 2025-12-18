@@ -31,8 +31,6 @@ int main() {
             cout << s.size() - min(cntL,cntR) << '\n';
         }
 
-        
-
     }
 
 
