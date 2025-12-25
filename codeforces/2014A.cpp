@@ -20,11 +20,10 @@ int main() {
 
         for(int i = 1; i <= n; i++){
             if(a[i] >= k){
-                rb = a[i];
+                rb += a[i];
             }
             if(a[i] == 0 && rb > 0){
                 rb--;
-                a[i]++;
                 res++;
             }
         }
