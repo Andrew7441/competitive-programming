@@ -44,7 +44,6 @@ public:
 
             i++;
             cv.notify_all();
-
         }
     }
 
@@ -85,6 +84,21 @@ public:
 
 int main() {
     FizzBuzz Sol(15);
+
+    auto printFizz = [](){ cout << "Fizz "; };
+    auto printBuzz = [](){ cout << "Buzz "; };
+    auto printFizzBuzz = [](){ cout << "FizzBuzz "; };
+    auto printNumber = [](int x){ cout << x << " "; };
+
+    thread t1(&FizzBuzz::fizz, &Sol, printFizz);
+    thread t2(&FizzBuzz::buzz, &Sol, printBuzz);
+    thread t3(&FizzBuzz::fizzbuzz, &Sol, printFizzBuzz);
+    thread t4(&FizzBuzz::number, &Sol, printNumber);
+
+    t1.join();
+    t2.join();
+    t3.join();
+    t4.join();
     
     
 }
