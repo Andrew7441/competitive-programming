@@ -51,7 +51,6 @@ public:
 int main() {
     Solution Sol;
 
-    // Construct the tree
     TreeNode* root = new TreeNode(1);
     root->left = new TreeNode(7);
     root->right = new TreeNode(0);
