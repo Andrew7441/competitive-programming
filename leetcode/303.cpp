@@ -17,12 +17,6 @@ public:
     }
 };
 
-/**
- * Your NumArray object will be instantiated and called as such:
- * NumArray* obj = new NumArray(nums);
- * int param_1 = obj->sumRange(left,right);
- */
-
 int main() {
     vector<int> nums{-2, 0, 3, -5, 2, -1};
 
@@ -43,7 +37,4 @@ int main() {
         cout << i << ", ";
     }
     cout << "]";
-
-
-    
 }
