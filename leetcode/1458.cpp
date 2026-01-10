@@ -45,7 +45,7 @@ Their dot product is (2*3 + (-2)*(-6)) = 18.
 */
 
 /*
-So Dot product is basically multiplying element by element  so 2 * 3
+Dot product is basically multiplying element by element  so 2 * 3
 
 Will use Longest Common Subsequence analogy because i have a lot of combinations.
 its not simply choosing or skipping a particular number helps me maximize my dot product
