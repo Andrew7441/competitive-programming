@@ -7,7 +7,7 @@ public:
         double belowarea = 0;
         double abovearea = 0;
 
-        for(int i = 0; i < squares.size(); i++){
+        for(int i = 0; i < (int)squares.size(); i++){
             double bottomY = squares[i][1];
             double side = squares[i][2];
             double topY = bottomY + side;
