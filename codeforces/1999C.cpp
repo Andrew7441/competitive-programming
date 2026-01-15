@@ -24,7 +24,7 @@ int main() {
         }
 
         for(int i = 1; i < n; i++){
-            if(segs[i].first - segs[i-1].second >= 3){
+            if(segs[i].first - segs[i-1].second >= s){
                 ok = true;
             }
         }
