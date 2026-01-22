@@ -9,13 +9,16 @@ int main() {
     cin >> t;
 
     while(t--){
-        int n;
-        cin >> n;
-
         string s;
         cin >> s;
 
-        cout << s.back() << "\n";
+        reverse(s.begin(), s.end());
+                
+        for(char& c: s){
+            if(c == 'q') c = 'p';
+            else if(c == 'p') c = 'q';
+        }
+        cout << s << "\n";
     }
 
     return 0;
