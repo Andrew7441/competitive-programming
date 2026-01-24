@@ -5,26 +5,20 @@ class Solution {
 public:
     string thousandSeparator(int n) {
         string s = to_string(n);
-        vector<char> vs;
         int count = 0;
+        string res = "";
 
-        reverse(s.begin(), s.end());
-
-        for(char i : s){
+        for(int i = s.size() - 1; i >= 0; i--){
             if(count == 3){
-                vs.push_back('.');
+                res.push_back('.');
                 count = 0;
             }
-            vs.push_back(i);
+            res.push_back(s[i]);
             count++;
         }
 
-        string res = "";
-        reverse(vs.begin(), vs.end());
+        reverse(res.begin(), res.end());
 
-        for(char i : vs){
-            res += i;
-        }
         return res;
     }
 };
