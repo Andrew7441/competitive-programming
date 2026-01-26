@@ -42,3 +42,11 @@ int main() {
     }
     
 }
+
+/*
+I can see myself getting better in real time and i couldnt be more thankful.
+I love myself and i love the suffering which inevitably leads to better 
+thought processes and faster thinking. 
+
+I solved this question in under 5 min. I am so proud of myself.
+*/
