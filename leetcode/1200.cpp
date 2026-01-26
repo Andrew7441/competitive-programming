@@ -18,8 +18,8 @@ public:
         for(int i = 1; i < (int)arr.size(); i++){
             if(arr[i] - arr[i-1] == mindiff){
                 vector<int> pair;
+                pair.push_back(arr[i-1]);
                 pair.push_back(arr[i]);
-                pair.push_back(arr[i+1]);
                 res.push_back(pair);
             }
         }
