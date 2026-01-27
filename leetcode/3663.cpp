@@ -37,3 +37,30 @@ int main() {
 
     return 0;    
 }
+
+/*
+class Solution {
+public:
+    int getLeastFrequentDigit(int n) {
+        int freq[10] = {0};
+        string s = to_string(n);
+
+        for(char c : s){
+            freq[c - '0']++;
+        }
+
+        int minFreq = INT_MAX;
+        int ans = 0;
+
+        for(int d = 0; d <= 9; d++){
+            if(freq[d] > 0 && freq[d] < minFreq){
+                minFreq = freq[d];
+                ans = d;
+            }
+        }
+
+        return ans;
+    }
+};
+
+*/
