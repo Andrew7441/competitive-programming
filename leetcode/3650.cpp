@@ -47,3 +47,14 @@ int main() {
 
     cout << S.minCost(4, edges);
 }
+
+
+/*
+Intuition:
+Ill be using Dijkstra algorithm 
+
+In the cases that i will be applying the mentioned operation(reverse/Switch)
+    First Scenario, i need to make a switch when no path exists to n-1 node.
+    Second Scenario, when i get a minimum path when switching compared to a longer path.
+
+*/
