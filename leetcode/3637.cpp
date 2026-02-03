@@ -1,3 +1,6 @@
+#include <bits/stdc++.h>
+using namespace std;
+
 class Solution {
 public:
     bool isTrionic(vector<int>& nums) {
@@ -22,3 +25,11 @@ public:
         return i == n - 1 && q < n - 1;
     }
 };
+
+int main() {
+	vector<int> vec{1,3,5,4,2,6};
+	Solution S;
+	cout << boolalpha <<  S.isTrionic(vec) << "\n";
+	return 0;
+}
+
