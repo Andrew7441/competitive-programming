@@ -17,7 +17,6 @@ void solve(){
         }else{
             i++;
         }
-    
     }
 
     cout << res << "\n";
