@@ -8,20 +8,16 @@ void solve(){
     string s;
     cin >> s;
 
-    int a=0, b = 0, c = 0, d = 0;
-    for(char i : s){
-        if(i == 'A'){
-            a++;
-        }else if(i == 'B'){
-            b++;
-        }else if(i == 'C'){
-            c++;
-        }else if(i == 'D'){
-            d++;
-        }
+    int a = 0, b = 0, c = 0, d = 0;
+
+    for(char &i: s){
+        if(i == 'A') a++;
+        else if(i == 'B') b++;
+        else if(i == 'C') c++;
+        else if(i == 'D') d++;
     }
 
-    cout << min(a, n) + min(b, n) + min(c, n) + min(d, n);
+    cout << min(n, a) + min(n,b) + min(n, c) + min(n, d) << "\n";
 }
 
 int main() {
@@ -31,7 +27,8 @@ int main() {
     int t;
     cin >> t;
 
-    while(t--) solve();
-
+    while(t--){
+        solve();
+    }
     return 0;
 }
