@@ -26,8 +26,3 @@ int main() {
     cout << S.areSimilar(mat, k);
 
 }
-
-/*
-Intuition:
-
-*/
