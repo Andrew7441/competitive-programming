@@ -54,4 +54,21 @@ n = length of each word ~ both q & d are of same length
 
 Space Complexity: O(q)
 q = # of words in queries
+
+💭 first idea
+first idea was to use maps but i then saw the constraints
+and though of brute force
+
+🧩 key property / invariant
+The # of mismatched positions between a query word and a dictionary word must be at most 2 positions
+
+✅ key insight
+A query word is valid if there exists a dictionary word with at most 2 mismatched positions
+
+🔁 recognition cue for next time
+If one operation changes one character at one index, think in terms of counting mismatched positions.
+
+⏱ speed fix for next time
+Skip fancy structures and compare words position by 
+position immediately
 */
