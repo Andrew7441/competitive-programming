@@ -45,3 +45,5 @@ codeforces/build/
 codeforces/output/
 leetcode/.gitignore
 Codewars/
+graph/
+CSES/
