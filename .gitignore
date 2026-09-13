@@ -47,3 +47,6 @@ leetcode/.gitignore
 Codewars/
 graph/
 CSES/
+node_modules/
+package-lock.json
+package.json
