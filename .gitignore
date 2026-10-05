@@ -41,13 +41,14 @@
 *.dwo
 .vscode
 
-codeforces/build/
-codeforces/output/
-leetcode/.gitignore
-Codewars/
-graph/
-CSES/
 node_modules/
 package-lock.json
 package.json
 tsconfig.json
+
+# Build output (compile into an output/ folder next to the source)
+output/
+build/
+
+# Pre-reorganization snapshot of all sources (safe to delete)
+.reorg-backup.zip
